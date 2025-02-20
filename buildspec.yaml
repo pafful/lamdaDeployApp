@@ -8,7 +8,7 @@ phases:
 
   build:
     commands:
-      - python lambda_function.py   # Or your preferred build command 
+      - python function/lambda_function.py   # Or your preferred build command 
       
   post_build:
     commands:
