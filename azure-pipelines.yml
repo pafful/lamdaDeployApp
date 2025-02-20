@@ -6,8 +6,12 @@
 trigger:
 - main
 
+# pool:
+#   vmImage: ubuntu-latest
 pool:
-  vmImage: ubuntu-latest
+  name: Default
+  demands:
+   - agent.name -equals eca5e21a2b3c
 
 steps:
 - script: echo Hello, world!
